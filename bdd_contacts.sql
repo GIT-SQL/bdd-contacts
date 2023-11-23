@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS exo_contatcs;
-CREATE DATABASE exo_contatcs CHARACTER SET = 'utf8' COLLATE = 'utf8_general_ci';
+DROP DATABASE IF EXISTS exo_contacts;
+CREATE DATABASE exo_contacts CHARACTER SET = 'utf8' COLLATE = 'utf8_general_ci';
 
-USE exo_contatcs;
+USE exo_contacts;
 
 CREATE TABLE pays (
     iso_3 VARCHAR(3) PRIMARY KEY,
