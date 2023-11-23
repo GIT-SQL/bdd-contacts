@@ -22,3 +22,11 @@ INSERT INTO contacts (nom, prenom, date_de_naissance, sexe, adresse, cp, ville, 
 ('García', 'Ana', '1995-11-03', 'Femme', '101 Calle Principal', '28001', 'Madrid', 'ESP'),
 ('Müller', 'Hans', '1988-07-18', 'Homme', '321 Hauptstraße', '10115', 'Berlin', 'DEU'),
 ('Kim', 'Soo-Min', '1993-01-25', 'Femme', '567 Gangnam-gu', '04523', 'Séoul', 'KOR');
+
+CREATE TABLE telephone (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    id_contact INT,
+    FOREIGN KEY (id_contact) REFERENCES contacts(id),
+    numero VARCHAR(50),
+    type BYTE
+);
