@@ -47,3 +47,69 @@ CREATE TABLE pays (
     nationalite VARCHAR(50)
 );
 
+INSERT INTO pays (iso_3, nom, iso_2, nationalite) VALUES
+-- Europe
+("FRA", "France", "FR", "Français"),
+("ESP", "Espagne", "ES", "Espagnol"),
+("DEU", "Allemagne", "DE", "Allemand"),
+("ALB", "Albanie", "AL", "Albanien"),
+("AND", "Andorre", "AD", "Andorran"),
+("AUT", "Autriche", "AT", "Autrichien"),
+("BLR", "Biélorussie", "BY", "Biélorusse"),
+("BEL", "Belgique", "BE", "Belge"),
+("BGR", "Bulgarie", "BG", "Bulgare"),
+("HRV", "Croatie", "HR", "Croate"),
+("CYP", "Chypre", "CY", "Chypriote"),
+("CZE", "République tchèque", "CZ", "Tchèque"),
+("DNK", "Danemark", "DK", "Danois"),
+
+-- Amérique
+("ARG", "Argentine", "AR", "Argentin"),
+("BRA", "Brésil", "BR", "Brésilien"),
+("CAN", "Canada", "CA", "Canadien"),
+("CHL", "Chili", "CL", "Chilien"),
+("COL", "Colombie", "CO", "Colombien"),
+("CRI", "Costa Rica", "CR", "Costaricien"),
+("CUB", "Cuba", "CU", "Cubain"),
+("DOM", "République dominicaine", "DO", "Dominicain"),
+("ECU", "Équateur", "EC", "Équatorien"),
+("USA", "États-Unis", "US", "Américain"),
+
+-- Asie
+("KOR", "Corée du Sud", "KR", "Coréen"),
+("AFG", "Afghanistan", "AF", "Afghan"),
+("ARM", "Arménie", "AM", "Arménien"),
+("AZE", "Azerbaïdjan", "AZ", "Azerbaïdjanais"),
+("BHR", "Bahreïn", "BH", "Bahreïni"),
+("BGD", "Bangladesh", "BD", "Bangladais"),
+("BTN", "Bhoutan", "BT", "Bhoutanais"),
+("BRN", "Brunéi", "BN", "Brunéien"),
+("KHM", "Cambodge", "KH", "Cambodgien"),
+("CHN", "Chine", "CN", "Chinois"),
+("IND", "Inde", "IN", "Indien"),
+
+-- Afrique
+("DZA", "Algérie", "DZ", "Algérien"),
+("AGO", "Angola", "AO", "Angolais"),
+("BEN", "Bénin", "BJ", "Béninois"),
+("BWA", "Botswana", "BW", "Botswanais"),
+("BFA", "Burkina Faso", "BF", "Burkinabé"),
+("CMR", "Cameroun", "CM", "Camerounais"),
+("CPV", "Cap-Vert", "CV", "Cap-verdien"),
+("TCD", "Tchad", "TD", "Tchadien"),
+("COM", "Comores", "KM", "Comorien"),
+("EGY", "Égypte", "EG", "Égyptien"),
+
+-- Océanie
+("AUS", "Australie", "AU", "Australien"),
+("FJI", "Fidji", "FJ", "Fidjien"),
+("KIR", "Kiribati", "KI", "Kiribatien"),
+("MHL", "Îles Marshall", "MH", "Marshallais"),
+("FSM", "Micronésie", "FM", "Micronésien"),
+("NCL", "Nouvelle-Calédonie", "NC", "Calédonien"),
+("NZL", "Nouvelle-Zélande", "NZ", "Néo-Zélandais"),
+("PLW", "Palaos", "PW", "Paluan"),
+("PNG", "Papouasie-Nouvelle-Guinée", "PG", "Papouanéo-Guinéen"),
+("TON", "Tonga", "TO", "Tongien");
+
+
