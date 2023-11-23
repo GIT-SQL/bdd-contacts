@@ -28,5 +28,14 @@ CREATE TABLE telephone (
     id_contact INT,
     FOREIGN KEY (id_contact) REFERENCES contacts(id),
     numero VARCHAR(50),
-    type BYTE
+    type TINYINT
 );
+
+INSERT INTO telephone (id_contact, numero, type) VALUES
+(1,'+33687378459', 1),
+(2,'+3225551234', 2),   
+(3,'+12125551234', 1),  
+(4,'+34987654321', 2),  
+(5,'+4915123456789', 1), 
+(6,'+82212345678', 2);   
+
