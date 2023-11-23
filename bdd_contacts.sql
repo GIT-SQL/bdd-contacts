@@ -12,7 +12,8 @@ CREATE TABLE contacts (
     adresse TEXT,
     cp VARCHAR(10),
     ville VARCHAR(70),
-    pays_iso_3 VARCHAR(3)
+    pays_iso_3 VARCHAR(3),
+    FOREIGN KEY (pays_iso_3) REFERENCES pays(iso_3)
 );
 
 INSERT INTO contacts (nom, prenom, date_de_naissance, sexe, adresse, cp, ville, pays_iso_3) VALUES
@@ -38,4 +39,11 @@ INSERT INTO telephone (id_contact, numero, type) VALUES
 (4,'+34987654321', 2),  
 (5,'+4915123456789', 1), 
 (6,'+82212345678', 2);   
+
+CREATE TABLE pays (
+    iso_3 VARCHAR(3) PRIMARY KEY,
+    nom VARCHAR(70),
+    iso_2 VARCHAR(2),
+    nationalite VARCHAR(50)
+);
 
