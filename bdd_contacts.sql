@@ -83,7 +83,7 @@ CREATE TABLE contacts (
     sexe VARCHAR(10),
     adresse TEXT,
     cp VARCHAR(10),
-    ville VARCHAR(70),
+    ville VARCHAR(70)
     pays_iso_3 VARCHAR(3),
     FOREIGN KEY (pays_iso_3) REFERENCES pays(iso_3)
 );
